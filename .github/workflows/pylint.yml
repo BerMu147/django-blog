@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: windows
+    runs-on: windows-os
     strategy:
       matrix:
         python-version: ["3.10", "3.11"]
