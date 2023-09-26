@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BEHOLD! ARTICLES!</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1><a href="{% with name='list' %}">All Articles</a></h1>{% endwith %}
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
