@@ -3,7 +3,6 @@
 <div class="articles"><br><br>
     {% for article in all_articles %}
     <div class="article">
-        <!-- <h2><a href="{% with name='articles:details'%}">{{ article.title }}</a></h2>{% endwith %} -->
         <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
         <p>{{ article.snippet }}</p>
         <p>{{ article.date }}</p>
