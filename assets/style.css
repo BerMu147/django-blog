@@ -3,6 +3,7 @@ body{
     background: #ff5532;
     background-repeat: no-repeat;
     background-image: url(decors.png);
+    box-sizing: border-box;
 }
 
 body *{
@@ -17,4 +18,8 @@ h1,h2,h3,h4,h5,h6{
 a, a:hover, a:visited{
     text-decoration: none;
     color: #fff;
+}
+
+p*{
+    width: 50%;
 }

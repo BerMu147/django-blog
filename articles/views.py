@@ -8,4 +8,6 @@ def articles(request):
    return render(request, 'articles/article.html', {'all_articles':all_articles})
 
 def article_detail(request, slug):
-   return HttpResponse(slug)
+   # return HttpResponse(slug)
+   article = Article.objects.get(slug=slug)
+   return render(request,'articles/article_detail.html', {'article':article})

@@ -1,6 +1,6 @@
 {% extends 'base_layout.html' %}
 {% block content %}
-<div class="articles"><br><br>
+<div class="articles">
     {% for article in all_articles %}
     <div class="article">
         <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
