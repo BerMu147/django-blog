@@ -6,7 +6,7 @@ class Article(models.Model):
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateField(auto_now_add=True)
-    #thumbnail
+    thumbnail = models.ImageField(default='default.png',blank=True)
     #author
     def __str__(self):
         return self.title
