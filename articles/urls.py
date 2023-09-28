@@ -5,5 +5,6 @@ app_name = "articles"
 
 urlpatterns = [
     path('', views.articles, name="list"),
-    re_path(r"^(?P<slug>[\w-]+)/$", views.article_detail, name="detail")
+    path('create/', views.article_create, name="create"),
+    re_path(r"^(?P<slug>[\w-]+)/$", views.article_detail, name="detail"),
 ]
