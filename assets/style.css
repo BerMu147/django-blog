@@ -20,6 +20,129 @@ a, a:hover, a:visited{
     color: #fff;
 }
 
-p*{
-    width: 50%;
+.wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+div.wrapper h1{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.4em;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 0;
+}
+
+nav{
+    justify-self: end;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+nav button{
+    background: none;
+    color: #b0b0b0;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.article{
+    padding: 6px;
+    padding-bottom: 50px;
+    border: 3px solid #2d0800;
+    position: relative;
+}
+
+.article .author{
+    padding: 8px;
+    background: #2d0800;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.article h2{
+    font-size: 1.2em;
+}
+
+.article-detail .article{
+    padding: 0;
+}
+
+.article-detail .article img{
+    max-width: 80%;
+    padding-left: 10%;
+}
+
+.article-detail .article h2{
+    text-align: center;
+    margin: 15px auto;
+    font-size: 2.5em;
+}
+
+.article-detail .article p{
+    text-align: center;
+}
+
+.site-form{
+    margin-top: 50px;
+    border: 1px solid #2d0800;
+    padding: 20px;
+}
+
+.site-form input, .site-form textarea{
+    display: block;
+    margin: 15px 0 0 0;
+    padding: 10px;
+}
+
+.site-form input[type="submit"]{
+    background: #2d0800;
+    border: 0;
+    color: #fff;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+a.highlight{
+    border: 1px solid #2d0800;
+    padding: 10px;
+    border-radius: 5px;
+    color: #2d0800
+}
+
+.helptext, .helptext ul{
+    margin: 0 auto;
+    color: #2ee7ff;
+    font-size: 0.85em;
+    display: block;
+}
+
+.errorlist li{
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid #2ee7ff;
+    color: #2ee7ff;
+    margin: 10px 0;
+}
+
+.errorlist{
+    padding: 0;
 }
